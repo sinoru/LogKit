@@ -47,7 +47,6 @@ Pod::Spec.new do |s|
   s.subspec 'Loggers' do |ss|
     ss.source_files  = 'Sources/Loggers/*.{swift}'
     ss.frameworks = 'Foundation'
-    ss.weak_frameworks = 'os'
     ss.dependency 'LogKit/Core'
   end
 
