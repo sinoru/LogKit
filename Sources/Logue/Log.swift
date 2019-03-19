@@ -26,7 +26,9 @@ open class Log {
     open private(set) var sublabel: String?
 
     private lazy var queue: DispatchQueue = {
-        let identifier = "io.sinoru.Logue." + UUID().uuidString
+        let identifier = withUnsafePointer(to: self, {
+            "io.sinoru.Logue.Log.\($0)"
+        })
 
         return DispatchQueue(label: identifier + ".queue", attributes: [.concurrent], target: DispatchQueue.global(qos: .utility))
     }()
