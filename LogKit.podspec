@@ -19,7 +19,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'LogKit'
-  s.version      = '1.0'
+  s.version      = '1.0.1'
   s.summary      = 'Lightweight, extensible logging framework.'
 
   s.description  = <<-DESC
