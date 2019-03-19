@@ -15,7 +15,7 @@ import os
 
 import _SwiftOSOverlayShims
 
-@available(macOS 10.12, iOS 10.0, *)
+@available(macOS 10.12, iOS 10.0, watchOS 3.0, tvOS 10.0, *)
 private func os_log(
     _ message: StaticString,
     dso: UnsafeRawPointer? = #dsohandle,
@@ -40,7 +40,7 @@ private func os_log(
 }
 // MARK: -
 
-@available(macOS 10.12, iOS 10.0, *)
+@available(macOS 10.12, iOS 10.0, watchOS 3.0, tvOS 10.0, *)
 public class OSLogger: Logger {
     let osLog: OSLog
 

@@ -7,7 +7,10 @@
 
 import Foundation
 
+@available(macOS, deprecated: 10.12, message:"Use OSLogger")
 @available(iOS, deprecated: 10.0, message:"Use OSLogger")
+@available(watchOS, deprecated: 3.0, message:"Use OSLogger")
+@available(tvOS, deprecated: 10.0, message:"Use OSLogger")
 public class NSLogger: Logger {
     private let prefix: String
 
