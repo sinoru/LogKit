@@ -1,3 +1,3 @@
 # LogKit
 
-A description of this package.
+Lightweight, extensible logging framework.
