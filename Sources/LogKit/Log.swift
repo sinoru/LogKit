@@ -135,3 +135,8 @@ extension Log {
     }
 }
 
+extension Log: TextOutputStream {
+    public func write(_ string: String) {
+        self.log(.default, "%@", string)
+    }
+}
