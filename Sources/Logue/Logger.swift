@@ -1,9 +1,9 @@
 //
 //  Logger.swift
-//  LogKit
+//  Logue
 //
-//  Created by Sinoru on 19/03/2019.
-//  Copyright © 2019 Sinoru. All rights reserved.
+//  Created by Jaehong Kang on 19/03/2019.
+//  Copyright © 2019 Jaehong Kang. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.

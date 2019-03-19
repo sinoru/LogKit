@@ -1,7 +1,7 @@
 import XCTest
 
-import LogKitTests
+import LogueTests
 
 var tests = [XCTestCaseEntry]()
-tests += LogKitTests.allTests()
+tests += LogueTests.allTests()
 XCTMain(tests)

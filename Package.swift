@@ -1,9 +1,9 @@
 //
 //  Package.swift
-//  LogKit
+//  Logue
 //
-//  Created by Sinoru on 19/03/2019.
-//  Copyright © 2019 Sinoru. All rights reserved.
+//  Created by Jaehong Kang on 19/03/2019.
+//  Copyright © 2019 Jaehong Kang. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -23,12 +23,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "LogKit",
+    name: "Logue",
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "LogKit",
-            targets: ["LogKit", "Loggers"]),
+            name: "Logue",
+            targets: ["Logue", "Loggers"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -38,13 +38,13 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "LogKit",
+            name: "Logue",
             dependencies: []),
         .target(
             name: "Loggers",
-            dependencies: ["LogKit"]),
+            dependencies: ["Logue"]),
         .testTarget(
-            name: "LogKitTests",
-            dependencies: ["LogKit"]),
+            name: "LogueTests",
+            dependencies: ["Logue"]),
     ]
 )

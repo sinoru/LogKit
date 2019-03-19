@@ -1,9 +1,9 @@
 #
-#  LogKit.podspec
-#  LogKit
+#  Logue.podspec
+#  Logue
 #
-#  Created by Sinoru on 19/03/2019.
-#  Copyright © 2019 Sinoru. All rights reserved.
+#  Created by Jaehong Kang on 19/03/2019.
+#  Copyright © 2019 Jaehong Kang. All rights reserved.
 #
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
@@ -18,15 +18,15 @@
 #  limitations under the License.
 
 Pod::Spec.new do |s|
-  s.name         = 'LogKit'
+  s.name         = 'Logue'
   s.version      = '1.0.1'
   s.summary      = 'Lightweight, extensible logging framework.'
 
   s.description  = <<-DESC
-                   LogKit is lightweight, extensible logging framework.
+                   Logue is lightweight, extensible logging framework.
                    DESC
 
-  s.homepage     = 'https://github.com/sinoru/LogKit'
+  s.homepage     = 'https://github.com/sinoru/Logue'
 
   s.license      = { :type => 'Apache License, Version 2.0', :file => 'LICENSE' }
 
@@ -40,16 +40,16 @@ Pod::Spec.new do |s|
   s.swift_version = '4.2'
 
   s.subspec 'Core' do |ss|
-    ss.source_files  = 'Sources/LogKit/*.{swift}'
+    ss.source_files  = 'Sources/Logue/*.{swift}'
     ss.frameworks = 'Foundation'
   end
 
   s.subspec 'Loggers' do |ss|
     ss.source_files  = 'Sources/Loggers/*.{swift}'
     ss.frameworks = 'Foundation'
-    ss.dependency 'LogKit/Core'
+    ss.dependency 'Logue/Core'
   end
 
   s.default_subspecs = 'Core', 'Loggers'
-  s.source       = { :git => 'https://github.com/sinoru/LogKit.git', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/sinoru/Logue.git', :tag => s.version.to_s }
 end

@@ -1,3 +1,3 @@
-# LogKit
+# Logue
 
-Lightweight, extensible logging framework.
+Lightweight, extensible logging framework for Swift.

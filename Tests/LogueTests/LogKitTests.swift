@@ -1,12 +1,12 @@
 import XCTest
-@testable import LogKit
+@testable import Logue
 
-final class LogKitTests: XCTestCase {
+final class LogueTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(LogKit().text, "Hello, World!")
+        XCTAssertEqual(Logue().text, "Hello, World!")
     }
 
     static var allTests = [
