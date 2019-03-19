@@ -19,7 +19,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'Logue'
-  s.version      = '1.0.1'
+  s.version      = '1.0.4'
   s.summary      = 'Lightweight, extensible logging framework.'
 
   s.description  = <<-DESC
